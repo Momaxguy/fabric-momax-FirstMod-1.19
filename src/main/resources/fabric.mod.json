@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "firstmod",
+  "version": "${version}",
+
+  "name": "First Mod",
+  "description": "This is The first mod I have ever made and it is a test",
+  "authors": [
+    "Momax"
+  ],
+  "contact": {
+    "homepage": "https://momax.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.momax.firstmod.FirstMod"
+    ]
+  },
+  "mixins": [
+    "firstmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
